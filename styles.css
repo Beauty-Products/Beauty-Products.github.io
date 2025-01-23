@@ -53,6 +53,9 @@ header>button:nth-child(3){
     margin-right: 0px;
     width: 105px;
 }
+header>button:nth-child(3):active{
+    cursor: progress;
+}
 header>button:nth-child(1){
     width: 80px;
     margin-left: 20px;
