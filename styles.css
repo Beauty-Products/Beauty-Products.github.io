@@ -9,7 +9,7 @@ body{
     border: 0;
     background-color: #F9EFE9;
     overflow-x: hidden;
-    height: 100vh;
+    height: 100%;
 }
 header{
     width: 100%;
