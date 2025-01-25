@@ -66,7 +66,7 @@ header>button:hover{
 .forma1{
     width: 120px;
     height: 382px;
-    z-index: 1000;
+    z-index: 1;
 }
 .contenido{
     margin-top: 30px;
@@ -120,24 +120,26 @@ header>button:hover{
     border-radius: 45px 45px 45px 45px;
 }
 .nosotros{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 100px 200px;
+    grid-template-rows: 70px 170px 180px 60px;
     width: 300px;
     height: 500px;
-    background-color: #152F79;
+    background-color: #e4e4e494;
+    backdrop-filter: blur(5px);
     border-radius: 27px 15px 15px 15px;
     position: absolute; 
     top: -90%; 
     left: 77%;
-    margin-left: auto; 
     z-index: 2;
     box-shadow: 0px 0px 10px #000000;
     transition: top 0.9s;
 }
-.atras{
+#atras{
     display: flex;
     align-items: center;
     justify-content: center;
+    grid-row: 1;
     width: 65px;
     height: 50px;
     margin: 10px;
@@ -149,7 +151,7 @@ header>button:hover{
     font-weight: 300;
     transition: border-radius 0.8s;
 }
-.atras:hover{
+#atras:hover{
     border-radius: 23px;
 }
 ::-webkit-scrollbar{
@@ -253,5 +255,37 @@ header>button:hover{
     background-size: cover;
     background-position: center;
 }
+.logo{
+    display: flex;
+    width: 170px;
+    height: 170px;
+    grid-column: span 2;
+    background: url(Imagenes/logo.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    margin-left: 21%;
+}
+.nosotros>span{
+    grid-row: 1;
+    grid-column: 2;
+    font-size: 25px;
+    font-family: "Kalam", serif;
+    width: 190px;
+    height: 30px;
+    margin-top: 15px;
+    
+}
+.nosotros>ul{
+    margin-top: 20px;
+    grid-column: span 2;
+    grid-row: 3;
+    font-family: "Kalam", serif;
+    font-size: 19px;
+    letter-spacing: 1px;
+    height: 150px;
+    list-style: square;
+}
 
-/*css*/
+
+/*LEONARDO ROPAIN 7/01/25*/
