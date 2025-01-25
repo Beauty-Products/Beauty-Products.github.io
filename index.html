@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beauty-Products</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
 </head>
 <!--CREADOR: LEONARDO ROPAIN  22/01/25-->
 <body>
@@ -12,7 +14,7 @@
         <button onclick="btninicio()">Inicio</button>
         <button onclick="location.href='Productos.html'">Productos</button>
         <button onclick="btnnosotros()">Nosotros</button>
-        <span>↓</span>
+        <span><i class="fa-solid fa-arrow-up fa-flip-vertical"></i></span>
     </header>
     <div class="pantalla">
     <div class="contenido">
@@ -30,7 +32,7 @@
             <div></div>
         </div>
         <div class="nosotros">
-            <button  id="atras" onclick="btnnosotros()">↑</button>
+            <button  id="atras" onclick="btnnosotros()"><i class="fa-solid fa-xmark"></i></button>
             <span>Sobre Nosotros</span>
             <div class="logo"></div>
             <ul>
@@ -38,6 +40,11 @@
                 <li>Email:ejemplo@gmail.com</li>
                 <li>Direccion: Calle 1 #10-10</li>
             </ul>
+            <div class="botones">
+            <button class="redes"><i class="fa-brands fa-facebook"></i></button>
+            <button class="redes"><i class="fa-brands fa-whatsapp"></i></button>
+            <button class="redes"><i class="fa-brands fa-tiktok"></i></button>
+            </div>
         </div>
     </div>
     <button class="productos" onclick="location.href='Productos.html'">¡Ver Productos!</button>
