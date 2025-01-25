@@ -106,18 +106,19 @@ header>button:hover{
 .productos{
     width: 190px;
     height: 60px;
-    border-radius: 45px 5px 45px 5px;
+    border-radius: 45px ;
     border: 0px;
     background-color: #EF7215;
     color: #ffffff;
     font-size: 24px;
     font-family: "Itim", serif;
     margin-left: 22rem;
-    transition: border-radius 1s;
+    transition: background-color 0.5s;
     cursor: pointer;
+    animation: boton-productos 3s infinite;
 }
 .productos:hover{
-    border-radius: 45px 45px 45px 45px;
+    background-color: #da6a14;
 }
 .nosotros{
     display: grid;
@@ -133,7 +134,7 @@ header>button:hover{
     left: 77%;
     z-index: 2;
     box-shadow: 0px 0px 10px #000000;
-    transition: top 0.9s;
+    transition: top 0.9s ease-out;
 }
 #atras{
     display: flex;
@@ -299,19 +300,23 @@ header>button:hover{
     box-shadow: 0px 0px 10px rgb(94, 94, 94);
     font-size: 35px;
     color: #7CA4BE;
-    transition: color 0.8s;
+    transition: color 0.8s ease;
+    transition: box-shadow 0.8s ease;
 }
 .redes:nth-child(1):hover{
     color: #0A67FF;
     cursor: pointer;
+    box-shadow: 0px 0px 10px #0A67FF;
 }
 .redes:nth-child(2):hover{
     color: #02BB01;
     cursor: pointer;
+    box-shadow: 0px 0px 10px #02BB01;
 }
 .redes:nth-child(3):hover{
     color: #000000;
     cursor: pointer;
+    box-shadow: 0px 0px 10px #000000;
 }
 .botones{
     margin-left: 30px;
@@ -321,3 +326,12 @@ header>button:hover{
     border: 0;
 }
 /*LEONARDO ROPAIN 7/01/25*/
+
+@keyframes boton-productos{
+    0%{border-radius: 45px 45px 45px 45px;}
+    20%{border-radius: 15px 45px 45px 15px;transform: translateX(7px);}
+    40%{border-radius: 45px 15px 15px 45px; transform: translateX(-7px);}
+    60%{border-radius: 15px 45px 45px 15px;}
+    60%{border-radius: 45px 15px 15px 45px;}
+    100%{border-radius: 45px 45px 45px 45px;}
+}
