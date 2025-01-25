@@ -1,3 +1,4 @@
+
 function btnnosotros() {
     const nosotrosDiv = document.querySelector('.nosotros');
     if (nosotrosDiv) {
@@ -10,4 +11,3 @@ function btnnosotros() {
     }
   }
   
-//java script

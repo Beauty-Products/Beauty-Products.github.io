@@ -54,7 +54,7 @@ header>button:nth-child(3){
     width: 105px;
 }
 header>button:nth-child(3):active{
-    cursor: progress;
+    cursor:pointer;
 }
 header>button:nth-child(1){
     width: 80px;
@@ -64,7 +64,7 @@ header>button:hover{
     color: #EF7215;
 }
 .forma1{
-    width: 130px;
+    width: 120px;
     height: 382px;
     z-index: 1000;
 }
@@ -214,26 +214,44 @@ header>button:hover{
 .imagenes>div:nth-child(1){
     border-radius: 45px 15px 15px 15px;
     grid-row: span 2;
+    background-image: url(Imagenes/BUSO\ VERDE\ Y\ BLANCO.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .imagenes>div:nth-child(2){
     border-radius: 15px 15px 15px 15px;
     grid-row: span 1;
+    background-image: url(Imagenes/GORRA.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .imagenes>div:nth-child(3){
     border-radius: 15px 45px 15px 15px;
     grid-row: span 2;
+    background-image: url(Imagenes/camisa.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .imagenes>div:nth-child(4){
     border-radius: 15px 15px 15px 15px;
     grid-row: span 3;
+    background-image: url(Imagenes/buso-amarillo.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .imagenes>div:nth-child(5){
     border-radius: 15px 15px 15px 45px;
     grid-row: span 2;
+    background-image: url(Imagenes/camisa-rosada.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .imagenes>div:nth-child(6){
     border-radius: 15px 15px 45px 15px;
     grid-row: span 2;
+    background-image: url(Imagenes/relog.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 /*css*/
