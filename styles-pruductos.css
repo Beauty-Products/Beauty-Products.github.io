@@ -28,7 +28,7 @@ body{
     border-radius: 15px 5px 5px 15px;
     border: 0;
     background-color: #EF7215;
-    color: #152F79;
+    color: #ffff;
 }
 .input{
     margin-left:35%;
@@ -49,7 +49,7 @@ body{
     justify-content: center;
     margin-top: 6px;
     margin-left: 0px;
-    color: #EF7215;
+    color: #ffff;
     width: 40px;
     height: 40px;
     font-size: 20px;
