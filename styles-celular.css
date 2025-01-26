@@ -1,0 +1,8 @@
+@media (max-width:480px){
+    body{
+        justify-content: center;
+    }
+    .pantalla{
+        display: flexbox;
+    }
+}
