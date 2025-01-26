@@ -1,13 +1,11 @@
+const btnMostrar = document.getElementById('btn-nosotros');
+    const btnAtras = document.getElementById('atras');
+    const divNosotros = document.querySelector('.nosotros');
 
-function btnnosotros() {
-    const nosotrosDiv = document.querySelector('.nosotros');
-    if (nosotrosDiv) {
-      const top = nosotrosDiv.style.top;
-      if (top === '-90%') {
-        nosotrosDiv.style.top = '1%';
-      } else {
-        nosotrosDiv.style.top = '-90%';
-      }
-    }
-  }
-  
+    btnMostrar.addEventListener('click', () => {
+      divNosotros.style.top = '1%';
+    });
+
+    btnAtras.addEventListener('click', () => {
+      divNosotros.style.top = '-90%';
+    });
