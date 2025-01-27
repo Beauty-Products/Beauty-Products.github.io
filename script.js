@@ -3,7 +3,7 @@ const btnMostrar = document.getElementById('btn-nosotros');
     const divNosotros = document.querySelector('.nosotros');
 
     btnMostrar.addEventListener('click', () => {
-      divNosotros.style.top = '1%';
+      divNosotros.style.top = '2%';
     });
 
     btnAtras.addEventListener('click', () => {

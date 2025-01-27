@@ -71,7 +71,7 @@ header>button:hover{
 .contenido{
     margin-top: 30px;
     display: grid;
-    grid-template-columns: 200px 550px ;
+    grid-template-columns: 130px 550px ;
     grid-template-rows: 94px 50px 150px;
     width: 750px;
     height: 382px;
@@ -80,16 +80,16 @@ header>button:hover{
 .titulo{
     font-family: "Kaushan Script", serif;;
     width: 500px;
-    font-size: 70px;
+    font-size: 4.3rem;
     color: #EF7215;
-    margin-left: 30px;
+    margin-left: 35px;
     margin-top: 0px;
 }
 .slogan{
-    font-size: 28px;
+    font-size: 1.75rem;
     grid-column: 2;
     font-family: "Kalam", serif;
-    margin-left: 110px;   
+    margin-left: 120px;   
 }
 .descripcion{
     display: flex;
@@ -98,27 +98,27 @@ header>button:hover{
     width: 370px;
     grid-column: 2;
     grid-row: 3;
-    font-size: 20px;
-    margin-left: 80px;
+    font-size: 1.25rem;
+    margin-left: 90px;
     margin-top: 20px;
     font-family: "Kodchasan", serif;
 }
 .productos{
     width: 190px;
     height: 60px;
-    border-radius: 45px ;
+    border-radius: 45px 5px 45px 5px;
     border: 0px;
     background-color: #EF7215;
     color: #ffffff;
     font-size: 24px;
     font-family: "Itim", serif;
-    margin-left: 22rem;
-    transition: background-color 0.5s;
+    margin-left: 18rem;
+    transition: border-radius 0.5s ease;
     cursor: pointer;
-    animation: boton-productos 3s infinite;
+    
 }
 .productos:hover{
-    background-color: #da6a14;
+    border-radius: 45px ;
 }
 .nosotros{
     display: grid;
@@ -126,12 +126,12 @@ header>button:hover{
     grid-template-rows: 70px 170px 130px 60px;
     width: 300px;
     height: 450px;
-    background-color: #e4e4e494;
-    backdrop-filter: blur(5px);
+    background-color: #f3f3f394;
+    backdrop-filter: blur(3.5px);
     border-radius: 27px 15px 15px 15px;
     position: absolute; 
     top: -90%; 
-    left: 77%;
+    left: 75%;
     z-index: 2;
     box-shadow: 0px 0px 10px #000000;
     transition: top 0.9s ease-out;
@@ -164,7 +164,7 @@ header>button:hover{
     border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: #e4e4e494;
+    background-color: #e4e4e457;
     backdrop-filter: blur(5px);
     border-radius: 5px;
 }
@@ -187,7 +187,8 @@ header>button:hover{
     height: 350px;
     background-color: transparent;
     margin-top: 90px;
-    margin-left: 2%;
+    margin-left: auto;
+    padding-right: 120px;
 }
 .imagenes>div{
     background-color: #ffffff;
@@ -337,11 +338,3 @@ header>button:hover{
 }
 /*LEONARDO ROPAIN 7/01/25*/
 
-@keyframes boton-productos{
-    0%{border-radius: 45px 45px 45px 45px;}
-    20%{border-radius: 15px 45px 45px 15px;transform: translateX(7px);}
-    40%{border-radius: 45px 15px 15px 45px; transform: translateX(-7px);}
-    60%{border-radius: 15px 45px 45px 15px;}
-    60%{border-radius: 45px 15px 15px 45px;}
-    100%{border-radius: 45px 45px 45px 45px;}
-}

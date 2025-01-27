@@ -31,9 +31,9 @@ body{
     color: #ffff;
 }
 .input{
-    margin-left:35%;
+    margin-left:33%;
     width: 280px;
-    min-width: 200px;
+    min-width: 180px;
     height: 40px;
     border-radius: 15px 0px 0px 15px ;
     border: 0px;
