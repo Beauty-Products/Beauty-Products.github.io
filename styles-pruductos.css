@@ -1,20 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 body{
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: #F9EFE9;
     margin: 0;
-    height: 110vh;
-    scroll-behavior: smooth;
+    height: 150vh;
+    scroll-behavior:smooth;
 }
 
 .header{
     display: flex;
     width: 100%;
-    height: 55px;
-    background-color: #e4e4e494;
-    backdrop-filter: blur(5px);
+    height: 50px;
+    background-color: transparent;
+    backdrop-filter: blur(3px);
     position: fixed;
     z-index: 10;
+    border-bottom: 2px solid #f0f0f0;
+    box-shadow: 5px 5px 7px #b4b4b4b6;
+    border-radius: 0px 0px 15px 15px;
 }
 .atras{
     display: flex;
@@ -24,22 +29,24 @@ body{
     min-width: 65px;
     font-size: 24px;
     height: 45px;
-    margin: 5px;
+    margin-top: 3px;
+    margin-left: 6px;
     border-radius: 15px 5px 5px 15px;
     border: 0;
     background-color: #EF7215;
     color: #ffff;
 }
+
 .input{
     margin-left:33%;
     width: 280px;
     min-width: 180px;
-    height: 40px;
+    height: 38px;
     border-radius: 15px 0px 0px 15px ;
     border: 0px;
     outline: none;
     padding-left: 13px;
-    margin-top: 5px;
+    margin-top: 4px;
     font-size: 18px;
     
 }
@@ -47,29 +54,94 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 6px;
+    margin-top: 5px;
     margin-left: 0px;
     color: #ffff;
     width: 40px;
-    height: 40px;
+    height: 39px;
     font-size: 20px;
     border-radius: 0px 15px 15px 0px ;
     background-color: #152F79;
+    transition: color 0.7s;
+}
+.span:hover{
+    color: #EF7215;
+    font-size: 21px;
 }
 ::-webkit-scrollbar{
     width: 10px;
 }
 ::-webkit-scrollbar-track{
-    background-color: #40599d5b;
+    background-color: #ffffff80;
     backdrop-filter: blur(7px);
     border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: #e4e4e494;
+    background-color: #ef731594;
     backdrop-filter: blur(5px);
     border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover{
-    background-color: #bebebe94;
+    background-color: #ef7315d0;
     backdrop-filter: blur(10px);
+}
+
+.contenido{
+    display: grid;
+    grid-template-columns: repeat(5 ,17%);
+    grid-template-rows:repeat(3,31%) ;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 20px;
+    width: 85%;
+    height: 90%;
+    background-color: transparent;
+    margin-top: 70px;
+    min-width: 84%;
+    
+}
+.productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border-radius: 20px;
+    background-color: #ffffff;
+    border: 1px solid #EFEFEF;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    border-radius: 19px;
+    background-color: #efefefb7;
+}
+.precio{
+    font-size: 1.4rem;
+    font-family: "Kalam", serif;
+    
+}
+.comprar{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 90%;
+    height: 35px;
+    border-radius: 25px;
+    border: 0px;
+    background-color: #152F79;
+    font-family: "Kalam", serif;
+    font-size: 1.5rem;
+    color: #ffff;
+    padding: 0;
+    padding-left: 25px;
+}
+.wht{
+    width: 45px ;
+    height: 35px;
+    border-radius: 25px;
+    background-color: #0CC143;
+    margin-left: auto;
 }
